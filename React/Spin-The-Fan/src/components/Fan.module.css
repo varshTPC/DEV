@@ -1,0 +1,42 @@
+.bladeSpinning {
+    position: absolute;
+    height: 24rem;
+    width: 24rem;
+    top: 60px;
+    right: 80px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bladeNotSpinning {
+    position: absolute;
+    height: 24rem;
+    width: 24rem;
+    top: 60px;
+    right: 80px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.stand {
+    position: absolute;
+    top: 150px;
+    height: 34rem;
+    right: -6px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .bladeSpinning {
+        animation: fan-spin infinite linear;
+        animation-duration: 10s;
+    }
+}
+
+@keyframes fan-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

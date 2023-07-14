@@ -1,0 +1,43 @@
+.controlbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+    margin-top: 4rem;
+    gap:31rem;
+    width: 60%;
+}
+
+.startstop {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.controlbtn {
+    font-weight: bold;
+    font-family: 'Roboto Slab';
+    border: 0.3rem solid black;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 3px lightgray;
+    width: 150px;
+}
+
+.controlbtn:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.speedip {
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+}
+
+.speedip::placeholder {
+    font-size: 1.2rem;
+}
